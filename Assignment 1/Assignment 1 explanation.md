@@ -1,0 +1,10 @@
+# Netflix Marathon-Watch Planner - Submission Document
+
+## Model Selection
+I chose the Netflix titles dataset from a previous data analysis course, focusing on creating an interactive content recommendation tool.
+
+## Utility of the Prototype
+The Netflix Marathon-Watch Planner is an innovative solution for streaming content consumers, addressing the common challenge of deciding what to watch within a limited time frame. By allowing users to input their available viewing time, preferred genres, mood, and content ratings, the app generates personalized watch plans that maximize entertainment value. The prototype goes beyond simple recommendations by optimizing content selection to precisely fit the user's available time, reducing decision fatigue and enhancing the streaming experience.
+
+## Main Difficulties Found
+The most significant challenges encountered during the project spanned multiple technical and design domains. Handling diverse data types in the Netflix dataset proved particularly complex, with the need to manage different duration formats for movies and TV shows requiring sophisticated parsing strategies. Creating an algorithm to intelligently combine content while staying within the user's time constraints demanded intricate logic and multiple iterative refinements. The user interface design presented its own set of challenges, requiring careful widget placement and creative use of Streamlit's layout capabilities to balance comprehensive filtering options with visual appeal. Additionally, working with CSS posed significant obstacles due to a lack of prior knowledge in styling and layout design, necessitating extensive learning and experimentation to achieve the desired visual presentation. These multifaceted challenges required continuous problem-solving, technical adaptability, and a persistent approach to overcoming design and implementation hurdles.
