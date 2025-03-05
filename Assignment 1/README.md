@@ -59,4 +59,4 @@ The application uses the Netflix titles dataset which contains information about
    - Provide feedback
 
 ## Author
-Lucas Brunengo
+Lucas Brunengo Stefoni
