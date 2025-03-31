@@ -21,7 +21,18 @@ Each project in this repository represents a unique exploration of data analysis
   - Data preprocessing
   - Recommendation algorithms
 
-### 2. [Upcoming Projects]
+### 2. CarMatch AI
+- **Description**: An intelligent vehicle recommendation system that matches users with their ideal cars based on personal preferences, lifestyle needs, and budget constraints.
+- **Key Technologies**:
+  - Python
+  - Streamlit
+  - Cohere AI API
+  - Pandas & NumPy
+  - Plotly
+  - Data visualization
+  - Natural language processing
+ 
+### 3. [Upcoming Projects]
 - More projects will be added throughout the course
 
 ## Course Learning Objectives
