@@ -84,10 +84,6 @@ Your data is only used to generate recommendations within this application and i
 - **Plotly**: For data visualization
 - **Pandas & NumPy**: For data processing
 
-## License
-
-[MIT License](LICENSE)
-
 ## Acknowledgements
 
 - Powered by [Cohere](https://cohere.ai/) AI technology
