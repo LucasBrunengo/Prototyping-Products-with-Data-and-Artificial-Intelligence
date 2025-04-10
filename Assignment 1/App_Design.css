@@ -10,6 +10,7 @@
     --netflix-dark-gray: #1a1a1a;  /* Dark gray for elements */
     --netflix-light-gray: #333333; /* Lighter gray for inputs */
     --netflix-text-gray: #cccccc;  /* Soft gray for text */
+    --glass-border: rgba(255, 255, 255, 0.1); /* Border for glass effect */
 }
 
 /* Constrain main content container for better readability */
@@ -67,6 +68,40 @@
     margin-bottom: 1rem;
     text-align: center;
     width: 100%;
+}
+
+/* Mood selection info text */
+.mood-selection-info {
+    text-align: center;
+    color: var(--netflix-text-gray);
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+}
+
+/* Custom styling for multiselect dropdown */
+.stMultiSelect [data-baseweb="tag"] {
+    background-color: rgba(229, 9, 20, 0.2);
+    border: 1px solid var(--netflix-red);
+    transition: all 0.3s ease;
+}
+
+.stMultiSelect [data-baseweb="tag"]:hover {
+    background-color: rgba(229, 9, 20, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Style the dropdown options */
+.stMultiSelect [data-baseweb="select"] ul {
+    background-color: var(--netflix-dark-gray);
+    border: 1px solid var(--netflix-light-gray);
+}
+
+.stMultiSelect [data-baseweb="select"] li {
+    color: white;
+}
+
+.stMultiSelect [data-baseweb="select"] li:hover {
+    background-color: var(--netflix-light-gray);
 }
 
 /* Mood selector styling with interactive design */
@@ -223,4 +258,164 @@
 
 .fadeIn {
     animation: fadeIn 0.5s ease forwards;
+}
+
+/* Social sharing buttons */
+.sharing-container {
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(26, 26, 26, 0.7);
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.share-button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.share-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+/* Enhanced loading spinner */
+.stSpinner > div {
+    border-top-color: var(--netflix-red) !important;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background-color: var(--netflix-red) !important;
+}
+
+/* Form container styling */
+.form-container {
+    background: rgba(26, 26, 26, 0.7);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 5px;
+    padding: 10px !important;
+    font-weight: bold;
+}
+
+.streamlit-expanderContent {
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 0 0 5px 5px;
+    padding: 15px;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: var(--netflix-dark-gray);
+}
+
+/* Warning and error styling */
+.stAlert {
+    background-color: rgba(30, 30, 30, 0.7) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+.stWarning {
+    border-left-color: #FFD700 !important;
+}
+
+.stError {
+    border-left-color: var(--netflix-red) !important;
+}
+
+.stSuccess {
+    border-left-color: #32CD32 !important;
+}
+
+.stInfo {
+    border-left-color: #1E90FF !important;
+}
+
+/* Improved mobile responsiveness */
+@media (max-width: 768px) {
+    .main .block-container {
+        max-width: 100%;
+        padding: 0.5rem !important;
+    }
+    
+    .netflix-header {
+        font-size: 2.5em;
+    }
+    
+    .section-title {
+        font-size: 1.5em;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+    
+    .input-item {
+        width: 100%;
+    }
+    
+    .share-buttons {
+        flex-direction: column;
+    }
+}
+
+/* File uploader styling */
+.uploadedFile {
+    background-color: rgba(30, 30, 30, 0.7) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+/* Checkbox styling */
+.stCheckbox {
+    color: white;
+}
+
+.stCheckbox > div > label > div[data-testid="stMarkdownContainer"] > p {
+    font-size: 0.9em;
 }
